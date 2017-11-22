@@ -1,0 +1,22 @@
+nav {
+ background-color: #039be5;
+}
+
+.card .card-title {
+    font-size: 5px;
+    font-weight: bold;
+    padding: 0px;
+    position: relative;
+    color: #000;
+    margin-bottom: 0px;
+}
+
+.flickr-section {
+  width:25%;
+}
+.row .col.s4 {
+    width: 90%;  
+}
+.container{
+ margin-left:-24px;
+}
