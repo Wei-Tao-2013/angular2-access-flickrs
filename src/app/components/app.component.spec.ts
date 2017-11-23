@@ -15,8 +15,5 @@ describe('App: Angular2FlickrObservables', () => {
     expect(app).toBeTruthy();
   }));
 
-  // it('should have as title \'angular2-flickr-observables works!\'',
-  //     inject([Angular2FlickrObservablesAppComponent], (app: Angular2FlickrObservablesAppComponent) => {
-  //   expect(app.title).toEqual('angular2-flickr-observables works!');
-  // }));
+  
 });
