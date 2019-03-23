@@ -16,7 +16,7 @@ export class MainAppComponent implements OnInit {
   flickrs: Object;
   constructor(private _formBuilder: FormBuilder, private _flickrService: FlickrService) {
   }
- 
+
   ngOnInit() {
       this.searchControl.valueChanges
       .debounceTime(400)
@@ -26,5 +26,5 @@ export class MainAppComponent implements OnInit {
         this.flickrs = value;
       });
   }
-  
+
 }

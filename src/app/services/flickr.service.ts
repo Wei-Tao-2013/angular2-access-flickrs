@@ -18,7 +18,7 @@ export class FlickrService {
         .map( res =>res.json())
         .catch((error:Response | any) =>{  // as flickr's call back can't be invoked looks not compliance with jsonp callback mechanism. so ingnor any errors to go forwarding
             console.log("error is " + error);
-            return Observable.of([window.flickrJsonObject]);  //native js varable for storeing JSONP from flickr as fallback soltuion 
+            return Observable.of([window.flickrJsonObject]);  //native js varable for storeing JSONP from flickr as fallback soltuion
         }).map((val) => {
                 console.log('val' + val[0]);
                     return val[0].items.map((item: any) => {
@@ -31,5 +31,5 @@ export class FlickrService {
                         }
                     })
         });
-    }    
+    }
 }
